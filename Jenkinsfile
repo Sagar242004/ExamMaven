@@ -6,13 +6,6 @@ pipeline {
     }
 
     stages {
-
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/Sagar242004/ExamMaven.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'mvn clean package'
